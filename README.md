@@ -5,7 +5,7 @@ Internal plugin to help perform system testing of Waggle Edge Stack.
 ## Usage
 
 ```sh
-pluginctl run --name test-subscribe waggle/plugin-test-subscribe:0.1.0 [--debug] [--pywaggle-ref github-ref] topics...
+pluginctl run --name test-subscribe waggle/plugin-test-subscribe:0.1.1 [--debug] [--pywaggle-ref github-ref] topics...
 ```
 
 This will install pywaggle from HEAD or the provided ref and run a plugin which subscribes to the provided topics.
@@ -15,5 +15,5 @@ This will install pywaggle from HEAD or the provided ref and run a plugin which 
 The following will install pywaggle 0.52.7 and subscribe to all env.* topics.
 
 ```sh
-pluginctl run --name test-subscribe waggle/plugin-test-subscribe:0.1.0 --pywaggle-ref 0.52.7 'env.*'
+pluginctl run --name test-subscribe waggle/plugin-test-subscribe:0.1.1 --pywaggle-ref 0.52.7 'env.*'
 ```
