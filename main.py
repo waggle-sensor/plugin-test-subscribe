@@ -17,7 +17,7 @@ def main():
         datefmt="%Y/%m/%d %H:%M:%S",
     )
 
-    subprocess.check_call(["git", "clone", "http://github.com/waggle-sensor/pywaggle"])
+    subprocess.check_call(["git", "clone", "https://github.com/waggle-sensor/pywaggle"])
     subprocess.check_call(["git", "-C", "pywaggle", "checkout", args.pywaggle_ref])
     subprocess.check_call(["pip3", "install", "-q", "./pywaggle"])
 
